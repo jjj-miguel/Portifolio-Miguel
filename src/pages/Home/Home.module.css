@@ -1,0 +1,42 @@
+/* Home.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+.App {
+    position: relative;
+    height: 100vh; /* Ajuste conforme necessário */
+    overflow: hidden; /* Garante que nada extra apareça fora do viewport */
+  }
+  
+  .text_home {
+    position:relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    align-items: flex-start;
+  }
+  
+  .text_h1 {
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    font-size: 4rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 300px;
+    background: linear-gradient(45deg,#0ed69e, #ffffff, #0eb989);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+  

@@ -1,0 +1,47 @@
+/*Galeria Contatos Css*/
+
+/* Estilo para a galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 30px;
+  }
+  
+  /* Estilo para cada imagem na galeria */
+  .galeria img {
+    cursor: pointer;
+    width: 150px;
+    height: 150px; 
+    
+  }
+  
+  
+  .galeria-Contatos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; 
+    margin-top: 30px;
+    margin-bottom: 100px;
+  
+  }
+  
+  .itemGaleria-Contatos{
+  
+    cursor: pointer;
+    margin: 5px;
+    
+  box-shadow: 5px 4px grey;
+    border-radius: 15px;
+    transition: 1ms;
+  }
+  .itemGaleria-Contatos:hover{
+    border: 4px #081C15 solid;
+  
+  }
+  .contatos h4{
+    text-align:center;
+  }
+  /**/

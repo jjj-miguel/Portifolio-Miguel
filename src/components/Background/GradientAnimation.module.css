@@ -1,0 +1,30 @@
+/* GradientAnimation.module.css */
+
+.gradientContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Largura total da tela */
+  height: 100vh; /* Altura total da tela */
+  overflow: hidden; /* Garante que nada extra apareça fora do viewport */
+}
+
+.gradientBox {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #011526, #54cbfa, #042735); /* Definição do gradiente */
+  background-size: 200% 200%; /* Tamanho do gradiente (necessário para animação) */
+  animation: gradientAnimation 5s ease infinite; /* Propriedades da animação */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Posição inicial do gradiente */
+  }
+  50% {
+    background-position: 100% 50%; /* Posição intermediária do gradiente */
+  }
+  100% {
+    background-position: 0% 50%; /* Posição final do gradiente */
+  }
+}

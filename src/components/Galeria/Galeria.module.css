@@ -1,0 +1,41 @@
+/* Galeria principal*/
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px; 
+
+  
+  }
+  
+  /* Estilo para cada imagem na galeria */
+  .Galeria img {
+    cursor: pointer;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+  }
+
+  
+  
+  .ItemGaleria{
+    cursor: pointer;
+    margin: 5px;  
+    margin-top: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: 1ms;
+    position:relative;
+  }
+  img:hover{
+    width: 160px;
+    height: 160px;
+  }
+  .Container-Galeria{
+    font-family: Gill Sans, sans-serif;
+    margin-top: 150px;
+    position: relative;
+    height: 100vh; /* Ajuste conforme necessário */
+    overflow: hidden;
+  }
