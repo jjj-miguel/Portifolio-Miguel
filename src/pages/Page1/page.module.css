@@ -1,3 +1,75 @@
-h1{
-    color: white;
+/* src/pages/Page1/page.module.css */
+.App {
+  text-align: center;
+}
+
+.text_home {
+  margin: 50px auto;
+  color: #333;
+}
+
+.text_h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.Container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  position: relative;
+  height: 200px;
+}
+
+.box {
+  width: 100px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  position: absolute;
+  transition: transform 0.5s ease, z-index 0s 0.5s; /* Delay z-index change until after transform */
+}
+
+.box1 {
+  height: 200px;
+  background-color: gold;
+}
+
+.box2 {
+  height: 200px;
+  background-color: silver;
+}
+
+.box3 {
+  height: 200px;
+  background-color: bronze;
+}
+
+.left {
+  transform: translateX(-150%);
+  z-index: 1; /* Lowest z-index */
+}
+
+.center {
+  transform: translateX(0%);
+  z-index: 3; /* Highest z-index */
+}
+
+.right {
+  transform: translateX(150%);
+  z-index: 2; /* Middle z-index */
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
